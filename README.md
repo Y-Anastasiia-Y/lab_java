@@ -1,14 +1,18 @@
 ### Main Page
-![image](https://github.com/Y-Anastasiia-Y/1LabJava/assets/167803241/1942ec33-f1e8-480d-a2cc-fe310a2fc0c3)
+![image_2024-04-22_22-42-28](https://github.com/Y-Anastasiia-Y/lab_java/assets/167803241/a9c38c66-f549-441d-b106-c5433ea46bbd)
+
 
 ### Enter the Url of a catalogue
-![image](https://github.com/Y-Anastasiia-Y/1LabJava/assets/167803241/819d6917-8ece-425b-96d9-e86abef728ae)
+![image_2024-04-22_22-42-29](https://github.com/Y-Anastasiia-Y/lab_java/assets/167803241/95986d04-04ff-4d58-82ef-47a2fc3f12b0)
+
 
 ### Download the Excel report
-![image](https://github.com/Y-Anastasiia-Y/1LabJava/assets/167803241/36a36c12-0028-47b0-92e8-9fb06c9c11d6)
+![image_2024-04-22_22-42-29 (2)](https://github.com/Y-Anastasiia-Y/lab_java/assets/167803241/26c8eede-4a68-477f-acdb-c9030b8ff1ac)
+
 
 ### The report contains the products data
-![image](https://github.com/Y-Anastasiia-Y/1LabJava/assets/167803241/570c5152-0224-4133-b6f5-20ba6121e47a)
+![image_2024-04-22_22-42-29 (3)](https://github.com/Y-Anastasiia-Y/lab_java/assets/167803241/fcefb2b6-ab0a-4a10-8da0-dbbcd8de17a6)
+
 
 ### The data is fetched from multiple pages
-![image](https://github.com/Y-Anastasiia-Y/1LabJava/assets/167803241/179b53ab-8ba2-4d42-a88f-108d91af846d)
+![image_2024-04-22_22-42-29 (4)](https://github.com/Y-Anastasiia-Y/lab_java/assets/167803241/3fb85ef5-3869-4f08-8d3a-41ef2515351d)
