@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TOUCH Scraper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    function scrapeData() {
+      const name = document.getElementById("targetUrlField").value;
+
+      const fileName = "products.xls";
+
+      fetch(`/scrape?targetUrl=${name}`)
+              .then(res => res.blob())
+              .then(res => {
+                const aElement = document.createElement('a');
+                aElement.setAttribute('download', fileName);
+                const href = URL.createObjectURL(res);
+                aElement.href = href;
+                aElement.setAttribute('target', '_blank');
+                aElement.click();
+                URL.revokeObjectURL(href);
+              })
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 700;
+      color: #555;
+    }
+
+    input[type="text"] {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 10px;
+      font-size: 16px;
+      width: 70%;
+      transition: all 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #66afe9;
+      outline: none;
+      box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    span {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .sample_data {
+      text-align: left;
+    }
+
+    .site_url {
+      font-size: large;
+      font-style: italic;
+      color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Get products from TOUCH</h1>
+  <label for="targetUrlField">TOUCH catalogue URL:</label>
+  <span class="site_url">https://touch.com.ua/ua/</span>
+  <input type="text" id="targetUrlField" />
+  <span class="site_url">/</span>
+  <br />
+  <button onclick="scrapeData()">Submit</button>
+  <p class="sample_data">
+    Sample data:
+    <ul class="sample_data">
+      <li>
+        elektrochayniki/filter/type-is-d452e3bdc40c6183bc47c001e4477bda/apply
+      </li>
+      <li>
+        apple-iphone-15
+      </li>
+      <li>
+        lomterezki
+      </li>
+      <li>
+        velosipedy-i-aksessuary
+      </li>
+    </ul>
+  </p>
+</div>
+<a href="https://www.google-analytics.com/analytics.js" download="file" hidden></a>
+</body>
